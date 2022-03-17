@@ -42,16 +42,16 @@ arraySports = arraySports.filter((item,index)=>{
 let playersTable=document.getElementById('playersTable');
 
 //Creamos un bucle para que se muestre la data del deporte seleccionado de las tarjetas:
-let data98ForSport = [];
+let dataForSport = [];
 for(let i = 0; i<arraySports.length; i++){
     let card= document.getElementsByClassName('card')[i];
     card.addEventListener('click', ()=>{
     document.getElementById('sectionSports').style.display='none';
     document.getElementById('medalTable').style.display='block';
-    dataForSport  =  dataForSport.concat(filterData(dataForAthletes,card.getAttribute('value')));
+    dataForSport = dataForSport.concat(filterData(dataForAthletes,card.getAttribute('value')));
     playersTable.innerHTML = '';
     createTable(dataForSport);
-    }
+    }   
 )}
 
 //Creamos una función que se encargue de crear la tabla:
