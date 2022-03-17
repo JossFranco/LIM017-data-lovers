@@ -42,7 +42,7 @@ arraySports = arraySports.filter((item,index)=>{
 let playersTable=document.getElementById('playersTable');
 
 //Creamos un bucle para que se muestre la data del deporte seleccionado de las tarjetas:
-let dataForSport = [];
+let data98ForSport = [];
 for(let i = 0; i<arraySports.length; i++){
     let card= document.getElementsByClassName('card')[i];
     card.addEventListener('click', ()=>{
