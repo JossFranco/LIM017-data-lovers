@@ -1,4 +1,3 @@
-
 # Data Lovers : Juegos Olímpicos Río de Janeiro 2016
 
 ## Índice
